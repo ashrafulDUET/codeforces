@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>https://github.com/ashrafulDUET/codeforces/tree/master/A/678A/281A
 #include<stdio.h>
 using namespace std;
 struct stu
