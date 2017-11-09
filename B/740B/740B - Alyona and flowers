@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+long long dp[105];
+int main()
+{
+    //freopen("in.txt","r",stdin);
+    long long n,m,in,l,r,re=0,temp=0;
+    cin>>n>>m;
+    for(int i=1;i<=n;i++)
+    {
+        cin>>dp[i];
+    }
+    for(int k=1;k<=m;k++)
+    {
+        temp =0;
+        cin>>l>>r;
+        for(int i=l;i<=r;i++)
+        {
+           temp +=dp[i];
+        }
+        if((temp)>0)
+        {
+            re +=temp;
+        }
+    }
+    cout<<re;
+    return 0;
+}
